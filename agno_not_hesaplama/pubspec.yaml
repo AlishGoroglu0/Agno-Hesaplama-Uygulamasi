@@ -1,0 +1,46 @@
+name: agno_not_hesaplama
+description: "Akademik Not hesaplama uygulaması"
+publish_to: 'none'
+version: 1.0.0+1
+
+environment:
+  sdk: '>=3.0.0 <4.0.0'
+
+# ============================================
+# DEPENDENCIES: Uygulamanın kullandığı harici paketler
+# ============================================
+dependencies:
+  flutter:
+    sdk: flutter
+    
+  # ============================================
+  # shared_preferences: Telefonun hafızasına küçük verileri kaydetmek için.
+  # Örn: Kullanıcının girdiği dersleri, notları kapatıp açsa bile hatırlamak için.
+  # ============================================
+  shared_preferences: ^2.2.2
+  
+  # ============================================
+  # flutter_slidable: Liste elemanlarını sağa/sola kaydırarak 
+  # silme/düzenleme butonları göstermek için.
+  # Örn: Ders listesinde bir dersi kaydırarak silmek.
+  # ============================================
+  flutter_slidable: ^3.0.1
+  
+  # ============================================
+  # flutter_picker: Kullanıcıdan seçim yapmasını istediğimiz 
+  # özel pencere (picker) widget'ları için.
+  # Örn: Not veya kredi seçimi için açılır liste.
+  # ============================================
+  flutter_picker: ^2.1.0
+
+  provider: ^6.1.1
+  
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^3.0.0
+
+flutter:
+  uses-material-design: true
+  assets:
+    - assets/logo.png
